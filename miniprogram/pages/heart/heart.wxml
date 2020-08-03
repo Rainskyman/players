@@ -1,0 +1,48 @@
+<view class="heartbox">
+  <view class="heartnotice">
+    <van-notice-bar backgroundColor="#FF8247" color="white" text="每 一 句 话 真 心 话 都 伴 着  笑 话 着 说  出 来 的 !  我 的 心 儿 已 不 再 这 里 " />
+  </view>
+
+  <!-- 旋转盒子 -->
+  <view class="rotatebox" style="width:{{rotateW}}px;height:{{rotateW}}px">
+    <view class="rotatecircle" bindtap="sheartg">
+      <view class="rotatePointer" style="width:{{rotateW}}px;top:{{rotateW/2}}px;transform: rotate({{addrotate}}deg)">
+        <view class="leftpt"></view>
+        <view class="rightpt"></view>
+      </view>
+    </view>
+    <view class="f">粉</view>
+    <view class="w">问</view>
+
+    <view class="b">白</view>
+    <view class="d">答</view>
+
+  </view>
+
+  <view class="hearttextbox">
+    <scroll-view scroll-y="true">
+      <view class="contents" style="color:{{activecolor}}">{{heartlist}}</view>
+    </scroll-view>
+  </view>
+
+
+  <view class="longimgbox">
+  <moswiper images="{{longimg}}" />
+  </view>
+
+  <view class="Allbtn">
+    <view class="onebtn">
+      <van-button color="linear-gradient(to right, #4bb0ff, #6149f6)"  size="normal" bindtap="upcolor">选题</van-button>
+    </view>
+    <!-- 按钮尺寸，可选值为 normal large small mini -->
+    <view class="flower"></view>
+    <view class="onebtn">
+      <van-button color="linear-gradient(to right, #4bb0ff, #6149f6)"  size="normal" bindtap='addheart'>加题</van-button>
+    </view>
+  </view>
+
+
+
+
+
+</view>

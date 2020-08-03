@@ -1,0 +1,19 @@
+<view class="container">
+  <view class="mydec">我的作品</view>
+
+  <view class="imgbox">
+    <image src="{{upimgpath}}"></image>
+  </view>
+
+
+  <view class="mysharebtn">
+    <button class="btn-share" open-type="share">分享给朋友</button>
+    <button class="btn-save" bindtap="clickSave">保存本地</button>
+    <!-- <button class='btn-water' bindtap="watersave">水印下载</button> -->
+    <button class="btn-back" bindtap="goback">返回</button>
+  </view>
+
+
+<canvas canvas-id="secondCanvas" disable-scroll="true" hidden='{{hidden}}'>
+</canvas>
+</view>

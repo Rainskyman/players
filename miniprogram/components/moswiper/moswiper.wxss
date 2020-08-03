@@ -1,0 +1,15 @@
+/* components/myswiper/myswiper.wxss */
+/* components/w-swiper/w-swiper.wxss */
+.swiperbox{
+  width: 100%;
+  height: 100%;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-image {
+  width: 100%;
+  height: 100%;
+}

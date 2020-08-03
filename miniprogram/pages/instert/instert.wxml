@@ -1,0 +1,26 @@
+<view class="notice">
+  <van-notice-bar backgroundColor="#000000" color="white" text="愿   笑   脸   永   存  你  的  脸  颊   !" />
+</view>
+<view class="box" style="background:{{bcolor}}">
+  <block wx-if="{{jokes.length>0}}">
+    <view wx:for="{{jokes}}" wx:key="index" class="joke" style="color:{{wcolor}}">
+      {{item.jkmsg.content}}
+    </view>
+  </block>
+  <block wx:else>
+    <view style="color:{{wcolor}}">每日一笑，但不能一直笑哦！欢迎明天再来</view>
+  </block>
+
+
+
+  <view class="moon" bindtap="chmodel">
+    <image wx:if="{{smmodel}}" src="cloud://mooniessky-roneg.6d6f-mooniessky-roneg-1301466912/daymodel/moon.png"></image>
+    <image wx:else src="cloud://mooniessky-roneg.6d6f-mooniessky-roneg-1301466912/daymodel/sun.png"></image>
+  </view>
+
+
+
+
+  <loadingmore hasmore="{{hasmore}}"></loadingmore>
+
+</view>

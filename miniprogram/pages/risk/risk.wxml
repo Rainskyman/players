@@ -1,0 +1,57 @@
+<view class="riskbox">
+  <view class="notice">
+    <van-notice-bar backgroundColor="#000000" color="white" text="生活就是一场大冒险!" />
+  </view>
+
+  <view class="rkcontbox">
+    <swiper indicator-dots='true' indicator-active-color='#ff5777' autoplay='true' circular='true' interval='3000' class='swiper'>
+      <block wx:for="{{Srisklist}}" wx:key="index">
+        <swiper-item>
+          <view class="wenben">{{item.riskmsg}}</view>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+  <view class='gamebox'>
+    <view class="one">
+      <view class="tishi">
+        <label>输入冒险人数</label>
+      </view>
+      <view class="pnum">
+        <input type="number" bindinput="changediv" name="personnum" placeholder="12冒险家以下"></input>
+      </view>
+    </view>
+
+
+
+
+
+    <view class="sharebox">
+
+      <button type="primary" class="sharebtn" bindtap='startrisk'>开始游戏</button>
+    </view>
+
+
+
+  </view>
+
+
+
+  <view class="rundiv">
+
+    <block wx:for="{{persons}}" wx:key="index">
+      <view class="eachp {{index == mathindex?'selected':''}}" data-index="{{index}}">{{index}}</view>
+    </block>
+    <view class="eachp2" wx:if="{{persons%3==2}}"></view>
+    <view class="eachp2" wx:if="{{persons%3==1}}"></view>
+    <view class="eachp2" wx:if="{{persons%3==1}}"></view>
+
+  </view>
+
+
+  <!-- <view class="{{selected?'color-box-selected':'color-box'}}" style="background:{{color}}" catchtap='_select'> -->
+
+
+
+</view>

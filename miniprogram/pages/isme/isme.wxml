@@ -1,0 +1,70 @@
+<!--pages/profile/childCpns/w-header/w-header.wxml-->
+<view class='header'>
+  <view class='avatar'>
+    <image src="https://wx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTKXvl6j6jCicia7O3KE95Hib1zHOjczYDcyQSkibOcdzyEGeViamDH5TDicaPLWXmeFljh33wGxmvsDCf9g/132" />
+  </view>
+  <view class='login-info'>
+    <view class='login' bindtap="loginMemory">此页面暂未开发</view>
+    <view class='phone'>
+      <image src="/images/ismeimg/phone.png" /> 暂无绑定手机号
+    </view>
+  </view>
+  <view class='arrow'>
+    <image src="/images/ismeimg/arrow-right.png" />
+  </view>
+</view>
+
+<!-- ================================================ -->
+<!--pages/profile/childCpns/w-info/w-info.wxml-->
+<view class='info'>
+  <view class='info-money info-item'>
+    <view>
+      <text class='count'>0.00</text>
+      <text>元</text>
+    </view>
+    <view>我的余额</view>
+  </view>
+  <view class='info-discount info-item'>
+    <view>
+      <text class='count'>0</text>
+      <text>个</text>
+    </view>
+    <view>我的优惠</view>
+  </view>
+  <view class='info-pointer info-item'>
+    <view>
+      <text class='count'>0</text>
+      <text>分</text>
+    </view>
+    <view>我的积分</view>
+  </view>
+</view>
+
+
+
+<!-- =================================================== -->
+<!--pages/profile/childCpns/w-list-view/w-list-view.wxml-->
+<view class='list-view'>
+  <block wx:for="{{orderList}}" wx:key="index">
+    <view class='list-item' bindtap="{{item.way}}">
+      <image src="/images/ismeimg/{{item.icon}}" />
+      <text>{{item.info}}</text>
+    </view>
+  </block>
+</view>
+
+
+<view class='list-item' bindtap="dashang">
+  <image src="/images/ismeimg/heart.png" />
+  <text>请求保存二维码打赏</text>
+</view>
+
+<view class='list-item'>
+  <image src="/images/comment.png" />
+  <text>留言给作者</text>
+</view>
+
+
+  <view class="dashang" wx:if="{{isdashang}}">
+    <image src="cloud://mooniessky-roneg.6d6f-mooniessky-roneg-1301466912/53e9c30500634ab8caa734645345e16.png"></image>
+  </view>

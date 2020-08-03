@@ -1,0 +1,5 @@
+<view class='bottom' bindtap="handleBottomClick"></view>
+<movable-area class='movarea'>
+  <movable-view class="top" direction='vertical' y='{{y}}' inertia bindtap="handleClick"
+  friction='{{1}}' damping="{{200}}"></movable-view>
+</movable-area>

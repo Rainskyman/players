@@ -1,0 +1,22 @@
+<view class="indexbox">
+  <view class="notice">
+    <van-notice-bar mode="link" backgroundColor="#000000" color="white" text="相信你还在这里从不曾离去，我的爱像天使守护你，若是你知道这里，从此没有我我会找个天使替我去爱你!" />
+  </view>
+  <!-- 轮播 -->
+  <view class="indexswiperbox">
+  <moswiper images="{{indexswiper}}" />
+  </view>
+  <!-- 玩法 -->
+  <view class="myoption">
+    <block wx:for="{{gametext}}" wx:key="index">
+      <view class="gametext" style="color:{{activecolor}}" bindtap="{{item.b}}" >{{item.a}}</view>
+    </block>
+    <!-- FF7256 -->
+  </view>
+
+
+
+
+
+  <view class="adss">广告植入 + Q:76295504</view>
+</view>

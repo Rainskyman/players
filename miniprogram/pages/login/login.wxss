@@ -1,0 +1,25 @@
+.container{
+    padding: 0 40rpx;
+}
+
+.container .logo-group{
+    margin-top: 100rpx;
+    display: flex;
+    justify-content: center;
+}
+
+.logo-group .logo{
+    width: 300rpx;
+    height: 300rpx;
+}
+
+.container .tips{
+    font-size: 32rpx;
+    color: #646464;
+    text-align: center;
+}
+
+.container button{
+    width: 100%;
+    margin-top: 20rpx;
+}

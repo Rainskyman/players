@@ -1,0 +1,117 @@
+.riskbox {
+  width: 100%;
+  height: 100%;
+}
+
+.rkcontbox {
+  width: 100%;
+  height: 20%;
+  margin-top: 10rpx;
+  border: 1px dashed white;
+  box-shadow: 10px 5px #888;
+}
+
+.rkcontbox swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.rkcontbox swiper .wenben {
+  width: 100%;
+  height: 100%;
+  border: 1px solid white;
+  background: 	#BFEFFF;
+  padding: 50rpx;
+  color: purple;
+}
+
+
+
+.gamebox {
+  width: 100%;
+  margin-top: 30rpx;
+  height: auto;
+  /* background: #cae1ff; */
+  border-top: 1px solid #000000;
+
+}
+.one{
+  width: 100%;
+  height: 60rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #E6E6FA;
+}
+
+.one .tishi{
+  line-height: 60rpx;
+}
+
+.one .tishi label{
+  width: 30%;
+  color: red;
+}
+.one .pnum{
+  width: 200rpx;
+  margin-left: 20rpx;
+  background:white;
+
+
+}
+.one .pnum input{
+    border:1rpx solid #000000;
+    border-radius: 50%；
+}
+
+.startbox{
+  width: 100%;
+  height: 60rpx;
+  margin-top: 10rpx;
+  background: #8618b2;
+
+  /* border-top: 1px solid #000000; */
+}
+.startbox{
+  margin-top: 10rpx;
+}
+.sharebox{
+  margin-top: 10rpx;
+}
+.sharebox button{
+  width: 100%;
+  background: #be5fdd;
+}
+
+.rundiv{
+  width: 100%;
+  height: 660rpx;
+  margin-top: 40rpx;
+  background: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.eachp{
+  width: 30%;
+  height: 150rpx;
+  /* background: red; */
+  margin: 10rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36rpx;
+  font-weight: 600;
+  border: 1rpx solid red;
+}
+.eachp2{
+  width: 30%;
+  height: 150rpx;
+  background: white;
+  margin: 10rpx;
+}
+.selected{
+  background: #EE82EE;
+  box-shadow: 5rpx 5rpx 5rpx #000000;
+}

@@ -1,0 +1,10 @@
+
+<view class="container">
+  <!-- 一张图片 -->
+  <commimage wx:for="{{thispagedata}}" wx:key="index" wx:for-item="da" da="{{da}}" detailurl="../dynamiced/dynamiced?index={{index}}"></commimage>
+  <loadingmore hasmore="{{hasmore}}" />
+</view>
+
+<view class="write-btn" bindtap="choosesend">
+  <view>+</view>
+</view>

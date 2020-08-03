@@ -1,0 +1,141 @@
+/* components/commimage/commimage.wxss */
+
+.container{
+  padding: 40rpx 20px;
+}
+
+.weibo-group {
+  width: 100%;
+  /* border: 1px solid #ececec; */
+  box-shadow: 2rpx 2rpx 2rpx #000000;
+  margin-bottom: 40rpx;
+}
+
+.user-group {
+  display: flex;
+}
+
+.avatar {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+
+.right-info {
+  flex: 1;
+  margin-left: 20rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.right-info .username {
+  font-size: 28rpx;
+  color: #000000;
+}
+
+.right-info  .detail-info {
+  font-size: 24rpx;
+  display: flex;
+}
+
+.detail-info .time {
+  margin-right: 20rpx;
+  color: #000000;
+
+}
+.detail-info  .from{
+  color: red;
+  width: 100rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+
+}
+
+.detail-info .address {
+  margin-left: 20rpx;
+  color: #FFBBFF;
+}
+
+
+.weibo-group {
+  margin-bottom: 20rpx;
+}
+
+/* 图片 */
+
+.weibo-content-group .content {
+ padding-top:20rpx; 
+  text-indent: 15rpx;
+}
+
+.weibo-content-group .image-list-group {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20rpx;
+  flex-wrap: wrap;
+}
+
+.weibo-content-group .image-list-group image {
+  margin-bottom: 5rpx;
+}
+
+.image-list-group video {
+  width: 100%;
+}
+
+.write-btn {
+  position: fixed;
+  right: 50rpx;
+  bottom: 100rpx;
+  width: 100rpx;
+  height: 100rpx;
+  background: rgb(116, 194, 223);
+  border-radius: 50%;
+  font-size: 100rpx;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.7;
+  box-shadow: 0 0 5rpx rgb(0, 0, 0, 0.5);
+}
+
+.write-btn view {
+  margin-top: -16rpx;
+}
+
+/* 品论 */
+
+.handle {
+  display: flex;
+  padding-top: 30rpx;
+  padding-bottom: 15rpx;
+  font-size: 28rpx;
+}
+
+.handle navigator {
+  flex: 1;
+}
+
+.handle image {
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 20rpx;
+}
+
+.handle view {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.handle .navigator {
+  flex: 1;
+}
+ .handle .praise{
+  flex: 1;
+
+}

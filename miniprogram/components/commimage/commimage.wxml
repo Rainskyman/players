@@ -1,0 +1,80 @@
+<wxs src="../../untils/util.wxs" module="util" />
+<view class="weibo-group">
+  <view class="user-group">
+    <image class="avatar" src="{{da.header}}"></image>
+    <view class="right-info">
+      <view class="username">{{da.author}}</view>
+      <view class="detail-info">
+        <view class="time">{{util.timeFormat(da.sendtime)}}</view>
+        <view class="from">{{da.phone}}</view>
+        <view class="address">{{da.weizhi}}</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="weibo-content-group">
+    <view class="content">
+      <navigator url='{{detailurl}}' wx:if="{{detail}}">
+        {{da.wenben}}
+      </navigator>
+      <navigator url='{{detailurl}}' wx:else>
+        {{da.wenben}}
+      </navigator>
+    </view>
+    <block wx:if="{{da.isuped.length>0}}">
+      <!-- 一张图片 -->
+      <view class="image-list-group" wx:if="{{da.isuped.length==1}}">
+        <image wx:for="{{da.isuped}}" wx:key="index" src="{{item}}" data-index="{{index}}" mode="aspectFill" bindtap="yulan" style="width:100%;max-height: 400rpx;"></image>
+      </view>
+
+      <!-- 两张图片 -->
+      <view class="image-list-group" wx:elif="{{da.isuped.length==1||da.isuped.length==4}}" bindtap="yulan">
+        <image wx:for="{{da.isuped}}" wx:key="index" data-index="{{index}}" bindtap="yulan" src="{{item}}" mode="aspectFill" style="width:{{twoimgW}}px;height:{{twoimgW}}px"></image>
+      </view>
+
+      <!-- 三张以上 -->
+      <view class="image-list-group" wx:else>
+        <block wx:for="{{da.isuped}}" wx:key="index">
+          <image src="{{item}}" mode="aspectFill" wx:key="index" style="width:{{threeimgW}}px;height:{{threeimgW}}px" bindtap="yulan" data-index="{{index}}"></image>
+        </block>
+        <view wx:if="{{da.isuped.length%3==2}}" style="width:{{threeimgW}}px;height:{{threeimgW}}px"></view>
+      </view>
+    </block>
+
+    <!-- 视频 -->
+
+    <block wx:if="{{da.vdpath}}">
+      <view class="image-list-group">
+        <video src="{{da.vdpath}}"></video>
+      </view>
+    </block>
+
+  </view>
+
+  <view class="handle" wx:if="{{hand}}">
+    <navigator url='{{detailurl}}' wx:if="{{detail}}">
+      <view class="comment">
+        <image src="../../images/comment.png"></image>评论
+      </view>
+    </navigator>
+
+    <navigator url='{{detailurl}}' wx:else>
+      <view class="comment">
+        <image src="../../images/comment.png"></image>评论
+      </view>
+    </navigator>
+
+    <view class="praise" data-index="{{index}}" bindtap="onPraise">
+
+      <image wx:if="{{da.ispraises}}" src="../../images/praise_active.png"></image>
+      <image wx:else src="../../images/praise.png"></image>
+      <block wx:if="{{da.praises && da.praises.length>0}}">
+        {{da.praises.length}}
+      </block>
+      <block wx:else>
+        赞
+      </block>
+    </view>
+  </view>
+
+</view>

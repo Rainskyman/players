@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "brush-point": "/components/brushPoint/index",
+    "color-box": "/components/colorBox/index",
+    "custom-button": "/components/customButton/index"
+  }
+}

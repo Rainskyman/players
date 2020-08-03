@@ -1,0 +1,43 @@
+.indexbox {
+  width: 100%;
+  height: 100%;
+  background: 	#F5F5F5;
+}
+
+/* 轮播高度 */
+.indexswiperbox{
+  height: 360rpx;
+}
+
+/* 玩法 */
+
+.myoption {
+  width: 100%;
+  height: 160rpx;
+  /* background: yellow; */
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-top: 10rpx;
+}
+.gametext {
+  width: 150rpx;
+  height: 150rpx;
+  border: 2px solid red;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 150rpx;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 72rpx;
+  font-weight: 800;
+  color: blue;
+}
+
+.adss{
+width: 100%;
+height: 80rpx;
+color: red;
+font-size: 50rpx;
+text-align: center;
+margin-top: 200rpx;
+}

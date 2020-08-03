@@ -1,0 +1,59 @@
+{
+  "pages": [
+    "pages/index/index",
+    
+        "pages/aa/aa",
+    "pages/test2/test2",
+    
+    "pages/test/test",
+    
+
+    "pages/isme/isme",
+    "pages/heart/heart",
+    "pages/risk/risk",
+    "pages/guess/guess",
+    "pages/share/share",
+    "pages/login/login",
+    "pages/write/write",
+    "pages/instert/instert",
+    "pages/dynamic/dynamic",
+    "pages/dynamiced/dynamiced"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "友聚",
+    "navigationBarTextStyle": "black"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置将用于真圈的展示"
+    }
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+  "tabBar": {
+    "selectedColor": "#000000",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/images/tabBar/home.png",
+        "selectedIconPath": "/images/tabBar/home_s.png"
+      },
+      {
+        "pagePath": "pages/dynamic/dynamic",
+        "text": "动态",
+        "iconPath": "/images/tabBar/sun.png",
+        "selectedIconPath": "/images/tabBar/sun_s.png"
+      },
+      {
+        "pagePath": "pages/isme/isme",
+        "text": "个人",
+        "iconPath": "/images/tabBar/me.png",
+        "selectedIconPath": "/images/tabBar/me_s.png"
+      }
+    ]
+  }
+}

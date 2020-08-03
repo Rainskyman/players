@@ -1,0 +1,10 @@
+<view class="aa">
+<view class="swiper">
+
+</view>
+  <movable-area style="width:750rpx;height:;">
+    <movable-view direction="horizontal" style="width:{{windowWidth*2-84}}rpx;height:100rpx;" bindtouchstart='onTouchStartEvent' bindtouchend='onTouchEndEvent' bindchange="onChangeEvent" bind:tap="goConversation">
+ 
+        </movable-view>
+      </movable-area>
+</view>

@@ -1,0 +1,8 @@
+
+<view class="mooptionbox">
+<block wx:for="o in 4">
+<view class="eachoption">
+真
+</view>
+</block>
+</view>

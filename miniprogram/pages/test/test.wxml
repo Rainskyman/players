@@ -1,0 +1,16 @@
+<!--pages/test/test.wxml-->
+<view class="bottom" bindtap="handleBottomClick" style="z-index:{{zIndex}}"></view>
+
+<scroll-view class="top" scroll-y scroll-top="{{scrollTop}}" bindscroll='handleScroll' style="height:{{height}}px" scroll-with-animation>
+  <view class="content" catchtap="handleClick">
+    <view class="header"></view>
+    <view class="box"></view>
+    <view class="box"></view>
+    <view class="box"></view>
+    <view class="box"></view>
+    <view class="box"></view>
+    <view class="box"></view>
+    <view class="box"></view>
+    <view class="box"></view>
+  </view>
+</scroll-view>

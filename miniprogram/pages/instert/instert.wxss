@@ -1,0 +1,37 @@
+.box {
+  margin-top:2rpx;
+}
+
+.joke {
+  padding: 10px;
+  border-bottom: 2rpx solid #e4e4e4;
+}
+
+.moon {
+  width: 100rpx;
+  height: 100rpx;
+  position: fixed;
+  right: 10rpx;
+  bottom: 60rpx;
+}
+
+.moon image {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+/* .mask{
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.3);
+  z-index: 1;
+}
+.asd{
+  width: 100%;
+  z-index: 99;
+  text-align: center;
+  font-size: 50rpx;
+} */

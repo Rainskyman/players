@@ -1,0 +1,44 @@
+<view class="container">
+  <form bindsubmit="startsubmit">
+    <textarea name="content" class="textarea" placeholder="输入心情"></textarea>
+
+    <view class="image-list-group" wx:if="{{sendtype == 1}}">
+      <block wx:for="{{choosedimgs}}" wx:key="index">
+        <view class="image-group" bindtap="yulan" data-index="{{index}}" style="width:{{setimgWidth}}px;height:{{setimgWidth}}px">
+          <image src="{{item}}"></image>
+          <view class="closebtn" bindtap="onRmove" data-index="{{index}}"></view>
+        </view>
+      </block>
+      <view wx:if="{{choosedimgs.length<9}}" class='add-image-btn' style="width:{{setimgWidth}}px;height:{{setimgWidth}}px;" bind:tap="onAddImageTap">
+        <view>+</view>
+      </view>
+
+
+
+    </view>
+
+
+
+    <!-- 视频 -->
+    <view class="videobox" wx:if="{{sendtype==2}}">
+      <video src="{{videopath}}"></video>
+    </view>
+
+    <view class="location-group" bindtap="getlocation">
+      <view class="left-group">
+        <image src="../../images/location.png"></image>
+        <view class="location-name">{{locationmsg?locationmsg:'所在位置'}}</view>
+      </view>
+      <view class="right-group">
+        <view calss="location-a">
+          <image src="../../images/arrow.png"></image>
+        </view>
+      </view>
+    </view>
+    <view class="sendbtn">
+      <button type="primary" form-type="submit">发表</button>
+    </view>
+
+  </form>
+
+</view>

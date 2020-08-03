@@ -1,0 +1,24 @@
+.container{
+  padding: 40rpx;
+}
+
+.write-btn {
+  position: fixed;
+  right: 50rpx;
+  bottom: 100rpx;
+  width: 100rpx;
+  height: 100rpx;
+  background: rgb(116, 194, 223);
+  border-radius: 50%;
+  font-size: 100rpx;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.7;
+  box-shadow: 0 0 5rpx rgb(0, 0, 0, 0.5);
+}
+
+.write-btn view {
+  margin-top: -16rpx;
+}

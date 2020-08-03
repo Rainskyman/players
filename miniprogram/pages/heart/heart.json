@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+        "van-notice-bar": "../../../miniprogram_npm/@vant/weapp/notice-bar/index",
+        "van-button": "../../../miniprogram_npm/@vant/weapp/button/index",
+        "moswiper": "/components/moswiper/moswiper"
+        
+  },
+
+    "navigationBarTitleText": "静态标题"
+  
+}

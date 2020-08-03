@@ -1,0 +1,33 @@
+/* pages/test/test.wxss */
+.bottom{
+  position: fixed;
+  height: 80vh;
+  width: 100%;
+  background: red;
+}
+.top{
+  width: 100%;
+  background: transparent;
+  position: fixed;
+  bottom: 0;
+  overflow: hidden
+}
+.top .content{
+  width: 100%;
+  height: auto;
+  margin-top: 70vh;
+  background: #fff;
+  position: relative;
+}
+.top .content .header{
+  height: 50px;
+  width: 100%;
+  background: #000;
+  position: sticky;
+  top: 0;
+}
+.top .content .box{
+  height: 100px;
+  background: #fff;
+  margin-bottom: 10px;
+}

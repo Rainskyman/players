@@ -1,0 +1,19 @@
+/* pages/test2/test2.wxss */
+.bottom{
+  height: 80vh;
+  width: 100%;
+  position: fixed;
+  background: red;
+}
+.movarea{
+  height: 20vh;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background: rgba(0,0,0,.5)
+}
+.movarea .top{
+  width: 100%;
+  height: 100vh;
+  background: #fff
+}

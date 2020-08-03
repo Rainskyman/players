@@ -1,0 +1,126 @@
+heartbox {
+  width: 100%;
+  height: 100%;
+  /* background: red; */
+}
+
+/* 旋转盒子 */
+
+.rotatebox {
+  background: #f2f2f2;
+  box-sizing: border-box;
+  position: relative;
+}
+.f{
+  position: absolute;
+  top:25rpx;
+  left: 25rpx;
+  color: #B23AEE;
+  font-size:36rpx;
+}
+.w{
+  position: absolute;
+  top: 25rpx;
+  right: 25rpx;
+  color: #FFBBFF;
+  font-size:36rpx;
+}
+.b{
+  position: absolute;
+  left: 25rpx;
+  bottom: 25rpx;
+  color: 	#EE00EE;
+  font-size:36rpx;
+}
+.d{
+  position: absolute;
+    right: 25rpx;
+  bottom: 25rpx;
+  color: peru;
+  font-size:36rpx;
+}
+.rotatecircle {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  background-image: url('https://6d6f-mooniessky-roneg-1301466912.tcb.qcloud.la/heartbg.jpg?sign=74a44e3fc668cec6a7fd5c72f54a2df5&t=1584088978');
+  background-size: cover;
+}
+
+.rotatePointer {
+  height: 12rpx;
+  position: absolute;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: #000;
+}
+
+.leftpt {
+  width: 50%;
+  height: 100%;
+  background: pink;
+}
+
+.rightpt {
+  width: 50%;
+  height: 100%;
+  background: white;
+}
+
+/* 旋转盒子 */
+
+/* 真心盒子 */
+
+.hearttextbox {
+  width: 100%;
+  height: 125rpx;
+  background:#E6E6FA;
+  margin-top: 20rpx;
+  /* overflow: hidden; */
+}
+
+scroll-view {
+  height: 125rpx;
+}
+
+.contents {
+  height: 100%;
+  /* background: yellowgreen; */
+  text-indent: 20rpx;
+  padding: 20rpx;
+}
+
+/* <view class="hearttextbox">
+    <view class="contents">{{heartlist}}</view>
+  </view> */
+
+/* 真心盒子 */
+
+/* 长条背景 */
+
+.longimgbox {
+  width: 100%;
+  height: 160rpx;
+  margin-top: 5rpx;
+  background-size: cover;
+}
+
+
+/* 按钮 */
+
+.Allbtn {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/* .flower {
+  width: 100%;
+  height: 100%;
+  background: yellow;
+   position: fixed; *//* bottom: 0; 
+} */

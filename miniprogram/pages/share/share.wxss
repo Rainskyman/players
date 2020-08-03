@@ -1,0 +1,42 @@
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+.mydec {
+  width: 100%;
+  height: 60rpx;
+  background: #ececec;
+  text-align: center;
+  font-size: 36rpx;
+  line-height: 60rpx;
+
+}
+.imgbox {
+  width:100%;
+  height:600rpx;
+  border: 1px solid #000000;
+}
+.imgbox image{
+  width: 100%;
+  height: 100%;
+}
+.mysharebtn{
+  margin-top: 20rpx;
+}
+
+
+.container  .btn-share {
+  color: white;
+  width: 80%;
+  background: #8618b2;
+  margin-bottom: 10rpx;
+}
+
+.container  .btn-save {
+  color: white;
+  width: 60%;
+  background: #fe3f80;
+}
+
+

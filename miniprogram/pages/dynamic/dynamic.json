@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "loadingmore": "../../components/loadingmore/loadingmore",
+    "commimage": "../../components/commimage/commimage"
+  },
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "dark"
+}

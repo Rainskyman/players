@@ -1,0 +1,79 @@
+<view class="guessbox">
+
+  <view class="question">
+    <view class="userheader">
+      <open-data type="userAvatarUrl"></open-data>
+    </view>
+    <text>题目:请开发您的想像</text>
+  </view>
+
+  <view class='startbox'>
+    <button bindtap="huanti">换题</button>
+    <button bindtap='xianshi'>显示</button>
+  </view>
+
+
+  <!-- 画板 -->
+  <view class="palette">
+    <canvas canvas-id="firstCanvas" disable-scroll="true" bindtouchstart="touchStart" bindtouchmove="touchMove" bindtouchend="touchEnd">
+    </canvas>
+  </view>
+  <!-- 画板 -->
+
+  <!-- 画笔大小 -->
+  <view class="boxone">
+    <view class="pensize">
+      <text>笔触大小</text>
+      <block wx:for="{{lineWidthArr.length}}" wx:key="index">
+        <brush-point class="brush-point" radius="{{lineWidthArr[index]}}" data-index="{{index}}" selected="{{index === curWidthIndex}}" bind:select="clickChangeWidth" color="{{currentColor}}"></brush-point>
+      </block>
+    </view>
+  </view>
+
+
+  <!-- 颜色盒子 -->
+  <view class='colorbox'>
+
+    <view class="color-slecotr-left"></view>
+    <scroll-view scroll-x="true">
+      <block wx:for="{{avaliableColors}}" wx:key="index">
+        <color-box class="color-box" data-color="{{avaliableColors[index]}}" selected="{{avaliableColors[index]===currentColor}}" bind:select="clickChangeColor"></color-box>
+      </block>
+    </scroll-view>
+    <view class="color-slecotr-right"></view>
+
+  </view>
+  <!-- 颜色盒子 -->
+
+  <!-- 操作按钮 -->
+  <view class="drawtools">
+    <view class="tool-container">
+      <custom-button class="icon-text" imgUrl="/images/guessicon/btn_back.png" bind:clickEvent="clickFallback" text="撤销" width="100%">
+      </custom-button>
+
+      <custom-button class="icon-text" imgUrl="/images/guessicon/btn_erase.png" selected="{{bgColor===currentColor}}" bind:clickEvent="clickErase" text="橡皮" width="100%">
+      </custom-button>
+
+      <custom-button class="icon-text" imgUrl="/images/guessicon/btn_tranCan.png" bind:clickEvent="clickClearAll" text="清除" width="100%">
+      </custom-button>
+
+      <custom-button class="icon-text" imgUrl="/images/guessicon/btn_pageview.png" bind:clickEvent="pageView" text="预览" width="100%">
+      </custom-button>
+    </view>
+  </view>
+  <!-- 操作按钮 -->
+
+  <!-- 分享 -->
+    <view class="sharebox">
+
+      <button type="primary" class="sharebtn" bindtap='clickShare'>分享</button>
+    </view>
+  <!-- 分享 -->
+
+
+<canvas canvas-id="secondCanvas" disable-scroll="true" hidden='{{hidden}}'>
+</canvas>
+
+
+
+</view>
